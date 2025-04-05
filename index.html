@@ -7,6 +7,48 @@
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div> 
+        <div class="logo"></div>
+        <p>Character Counter</p>
+      </div>
+
+      <h1>Analyze your text in real-time.</h1>
+    </header>
+
+    <main class="main-container">
+
+      <div class="textarea-container">
+        <textarea class="textarea-box" 
+        placeholder="Design is the silent ambassador of your brand. Simplicity is key to effective communication, creating clarity in every interaction. A great design transforms complex ideas into elegant solutions, making them easy to understand. It blends aesthetics and functionality seamlessly." 
+        id="textarea"></textarea>
+
+        <div class="checkbox-area">
+        <input type="checkbox" id="checkbox"/>
+        <label for="checkbox">Exclude Spaces</label>
+        <p>Approx. reading time: <1 minute</p>
+        </div>
+
+      </div>
+
+    <div class="counters-container">
+      <div class="counter-box">
+        <label for="textarea" id="Totalcharacters">0</label>
+        <p>Total Characters</p>
+       </div>
+   
+       <div class="counter-box">
+         <label for="textarea" id="wordcount">0</label>
+         <p>Total Characters</p>
+       </div>
+   
+     <div class="counter-box">
+       <label for="textarea" id="sentencecount">0</label>
+       <p>Total Characters</p>
+     </div>
+
+    </div>
+    </main>
     <script src="./js/scripts.js"></script>
   </body>
 </html>

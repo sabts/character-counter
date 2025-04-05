@@ -21,4 +21,48 @@ nav ul{
 body{
     margin: 0;
     font-family: sans-serif;
+    padding: 1rem;
 }
+.main-container{
+    display: flex;
+    align-content: center;
+    padding-bottom: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.textarea-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+.textarea-box{
+    display: flex;
+    height: 200px;
+    padding: 1rem;
+    gap: 0.625rem;
+    align-self: stretch;
+}
+.counters-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    align-self: stretch;
+}
+.counter-box{
+    display: flex;
+    height: 130px;
+    padding: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+    border: solid black;
+    border-radius: 0.75rem;
+}
+
