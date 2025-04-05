@@ -65,4 +65,7 @@ body{
     border: solid black;
     border-radius: 0.75rem;
 }
+.counter-total{
+    font-size: 40px;
+}
 
