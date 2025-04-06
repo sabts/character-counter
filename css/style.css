@@ -246,3 +246,15 @@ body{
 
     }
 }
+@media screen and (min-width: 1040px){
+    body{
+        padding: 2rem 8rem;
+    }
+    .counter-box{
+        height: 150px;
+        width: 320px ;
+        padding: 1rem;
+
+    }
+}
+
