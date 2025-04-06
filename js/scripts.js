@@ -52,7 +52,7 @@ const sentenceCounts = () => {
 }
 
 const timeReading = () => {
-    let readingPerMinute = 250;
+    const readingPerMinute = 225;
     let text = elementTextArea.value;
     let words = text.split(/\s+/).filter(word => word.length > 0);
     

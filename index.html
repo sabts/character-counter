@@ -3,50 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css" />
     <title>Document</title>
   </head>
   <body>
-    <header>
-      <div> 
-        <div class="logo"></div>
-        <p>Character Counter</p>
-      </div>
-
-      <h1>Analyze your text in real-time.</h1>
+    <header class="header-container">
+        <div class="logo"></div>  
+        <div class="dark-mode"></div>
     </header>
 
     <main class="main-container">
-
+      <h1 class="text main-title">Analyze your text in real-time.</h1>
       <div class="textarea-container">
-        <textarea class="textarea-box" 
+        <textarea class="textarea-box text placeholder" 
         placeholder="Design is the silent ambassador of your brand. Simplicity is key to effective communication, creating clarity in every interaction. A great design transforms complex ideas into elegant solutions, making them easy to understand. It blends aesthetics and functionality seamlessly." 
         id="textarea"></textarea>
 
         <div class="checkbox-area">
-        <input type="checkbox" id="checkbox"/>
-        <label for="checkbox">Exclude Spaces</label>
+        <input class="input-checkbox" type="checkbox" id="checkbox"/>
+        <label class="text options" for="checkbox">Exclude Spaces</label>
       </div>
-        <label id="readingtime">Approx. reading time: 1 minute</label>
-
+        <label class="text options" id="readingtime">Approx. reading time: <1  minute</label>
       </div>
 
     <div class="counters-container">
-      <div class="counter-box">
-        <label class="counter-total" for="textarea" id="Totalcharacters">0</label>
-        <p>Total Characters</p>
+      <div class="counter-box characters">
+        <label class="text counter-total" for="textarea" id="Totalcharacters">0</label>
+        <p class="text counter-caption">Total Characters</p>
        </div>
    
-       <div class="counter-box">
-         <label class="counter-total" for="textarea" id="wordcount">0</label>
-         <p>Total Characters</p>
+       <div class="counter-box words">
+         <label class="text counter-total" for="textarea" id="wordcount">0</label>
+         <p class="text counter-caption">Word Count</p>
        </div>
    
-     <div class="counter-box">
-       <label class="counter-total" for="textarea" id="sentencecount">0</label>
-       <p>Total Characters</p>
+     <div class="counter-box sentences">
+       <label class="text counter-total" for="textarea" id="sentencecount">0</label>
+       <p class="text counter-caption">Sentence Count</p>
      </div>
-
     </div>
     </main>
     <script src="./js/scripts.js"></script>
