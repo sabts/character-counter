@@ -179,21 +179,18 @@ body{
 .counter-box.characters{
     background-image: url(../assents/pattern-character-count.svg);
     background-repeat: no-repeat;
-    height: 130px;
     background-color: rgba(211, 160, 250, 1);
     background-position: right center;
 }
 .counter-box.words{
     background-image: url(../assents/pattern-word-count.svg);
     background-repeat: no-repeat;
-    height: 130px;
     background-color: rgba(255, 159, 0, 1);
     background-position: right center;
 }
 .counter-box.sentences{
     background-image: url(../assents/pattern-sentence-count.svg);
     background-repeat: no-repeat;
-    height: 130px;
     background-color: rgba(254, 129, 89, 1);
     background-position: right center;
 }
@@ -202,23 +199,50 @@ body{
     body{
         padding: 2rem;
     }
+    .logo{
+        width: 350px;
+        height: 80px;
+    }
+    
+    .dark-mode{
+        height: 44px;
+        width: 44px;
+        border-radius: 0.5rem;
+    }
+    .dark-mode::after{
+        top: 11px;
+        left: 11px;
+        background-size: contain;
+        height: 22px;
+        width: 22px;
+    }
     .text.main-title{
         font-size: 4rem;
     }
     .text.counter-total{
-        color: #12131A;
         font-size: 4rem;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 100%;
+    }
+    .header-container{
+        padding: 1.3rem;
     }
     .main-container{
         padding-inline: 2rem;
         gap: 40px;
     }
-    .checkbox-area{
-        flex-direction: row;
+    .option-container{
+        display: flex;
         flex-wrap: wrap;
+        gap: 19rem;
+        justify-content: space-between;
     }
+    .counters-container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .counter-box{
+        height: 150px;
+        width: 224px ;
+        padding: 1rem 0.75rem;
 
+    }
 }
