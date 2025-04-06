@@ -250,11 +250,18 @@ body{
     body{
         padding: 2rem 8rem;
     }
+    .option-container{
+        gap: 43rem;
+    }
+    .counters-container{
+        flex-direction: row;
+        align-content: center;
+        justify-content: stretch;
+    }
     .counter-box{
-        height: 150px;
-        width: 320px ;
+        width: 340px ;
+        justify-content: stretch;
         padding: 1rem;
-
     }
 }
 
